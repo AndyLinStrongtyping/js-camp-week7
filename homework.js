@@ -201,11 +201,11 @@ async function getOrdersWithAxios() {
 /*
 比較題：請說明 fetch 和 axios 的主要差異
 
-1. ____________________________________
+1. axios會自動處理JSON，fetch需要另外呼叫.json()
 
-2. ____________________________________
+2. fetch 只有網路錯誤才會進 .catch()，404、500 這種 HTTP 錯誤不會，要自己判斷 response.ok，axios會會自動拋出錯誤直接進
 
-3. ____________________________________
+3.fetch POST 時要手動設定Content-Type: application/json和jSON.stringify(body)，axios自動設定Content-Type，物件直接傳不用轉字串
 */
 
 // ========================================
